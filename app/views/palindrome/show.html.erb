@@ -1,0 +1,6 @@
+<%= form_for(@value, :url => create_path) do |f| %>
+	<%= f.label :input_value, "Give me an integer" %>
+	<%= f.text_field :input_value %>
+
+	<%= f.submit "Submit" %>
+<% end %>
