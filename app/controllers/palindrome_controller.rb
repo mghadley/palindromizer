@@ -16,4 +16,8 @@ class PalindromeController < ApplicationController
 	def show_p
 		@value = Palindrome.find(params[:id])
 	end
+
+	def display
+		@data = Palindrome.all
+	end
 end

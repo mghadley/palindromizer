@@ -1,0 +1,15 @@
+<h2>Previous Entries</h2>
+<p>(some of them didn't quite work)</p>
+
+<table style = "font-size:18px" border = 1px>
+	<tr>
+		<th>Input value</th>
+		<th>Palindrome</th>
+	</tr>
+	<% @data.each do |data| %>
+	<tr>
+		<td><%= data.input_value %></td>
+		<td><%= data.palindrome %></td>
+	<tr>
+	<% end %>
+<table>

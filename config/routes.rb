@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'palindrome#show'
   post 'create' => 'palindrome#create'
   get  'show_p/:id' => 'palindrome#show_p', as: 'show_p'
+  get  'display' => 'palindrome#display'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

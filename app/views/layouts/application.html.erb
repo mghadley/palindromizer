@@ -8,8 +8,12 @@
 </head>
 <body>
 
-<h1>THE PALINDROMIZER!!<h1>
+<h1 text-decoration = 'none'><%= link_to 'THE PALINDROMIZER!!', root_path %><h1>
 <%= yield %>
+
+<%= link_to 'See previous entries', display_path %>
+
+<%= debug(params) if Rails.env.development? %>
 
 </body>
 </html>
