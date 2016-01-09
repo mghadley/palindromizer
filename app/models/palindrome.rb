@@ -5,7 +5,7 @@ class Palindrome < ActiveRecord::Base
 		array = input_value.to_s.split('').map{|chr| chr.to_i}
 		mirrored = mirror(array)
 		return mirrored.join.to_i if mirrored.join.to_i > array.join.to_i
-		array[(array.length.to_f/2.0).round - 1] += 1
+		array = (array.join.to_i + 10**(array.length/2)).to_s.split('').map{|chr| chr.to_i}
 		mirrored = mirror(array)
 		return mirrored.join.to_i
 	end
