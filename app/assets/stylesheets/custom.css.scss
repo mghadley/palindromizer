@@ -4,11 +4,15 @@
 /* universal */
 
 body {
-    padding-top: 150px;
-    padding-left: 15px;
-    font-size: 20px;
+  padding-top: 150px;
+  padding-left: 15px;
+  font-size: 20px;
 }
 
 footer {
 	margin-top: 100px;
+}
+
+textarea {
+	resize: vertical;
 }
