@@ -8,15 +8,17 @@
 </head>
 <body>
 
-<header class="navbar navbar-fixed-top navbar-inverse">
-	<h1 text-decoration = 'none'><%= link_to 'THE PALINDROMIZER!!', root_path %><h1>
-</header>
+	<header class="navbar navbar-fixed-top navbar-inverse">
+		<h1 text-decoration = 'none'><%= link_to 'THE PALINDROMIZER!!', root_path %><h1>
+	</header>
 
-<%= yield %>
+	<%= yield %>
 
-<p><%= link_to 'See previous entries', display_path %></p>
+	<p><%= link_to 'See previous entries', display_path %></p>
 
-<%= debug(params) if Rails.env.development? %>
+	<footer>
+		<%= debug(params) if Rails.env.development? %>
+	</footer>
 
 </body>
 </html>
