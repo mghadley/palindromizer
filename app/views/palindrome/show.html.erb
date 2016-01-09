@@ -1,6 +1,8 @@
-<%= form_for(@value, :url => create_path) do |f| %>
-	<%= f.label :input_value, "Give me an integer" %>
-	<%= f.text_field :input_value %>
+<div class="col-md-6 col-md-offset-3">
+	<%= form_for(@value, :url => create_path) do |f| %>
+		<%= f.label :input_value, "Give me an integer" %>
+		<%= f.text_field :input_value %>
 
-	<%= f.submit "Submit" %>
-<% end %>
+		<%= f.submit "Submit" %>
+	<% end %>
+</div>

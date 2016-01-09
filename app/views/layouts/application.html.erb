@@ -8,10 +8,13 @@
 </head>
 <body>
 
-<h1 text-decoration = 'none'><%= link_to 'THE PALINDROMIZER!!', root_path %><h1>
+<header class="navbar navbar-fixed-top navbar-inverse">
+	<h1 text-decoration = 'none'><%= link_to 'THE PALINDROMIZER!!', root_path %><h1>
+</header>
+
 <%= yield %>
 
-<%= link_to 'See previous entries', display_path %>
+<p><%= link_to 'See previous entries', display_path %></p>
 
 <%= debug(params) if Rails.env.development? %>
 
